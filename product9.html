@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step UP | Produtos</title>
+    <link rel="stylesheet" href="stylep.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="header-inner-content">
+            <img src="img/Gaming Logo.png" width="140" class="nav-logo">
+            <nav>
+                <ul>
+                    <a href="index.html" target="_self"><li>Home</li></a>
+                    <li>Produtos</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="Form/index.html" target="_self"><img src="img/cart.png"></a>
+                <img src="img/menu.png" class="menu-button">
+            </div>
+        </div>    
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2 img">
+                <img src="img/tenis12.png" width="100%" id="ProductImg">
+            </div>
+            <div class="col-2 text">
+                <h3>Lançamentos</h3>
+                <h1>Mizuno Wave Prophecy 12 Black and Beige</h1>
+                <h4>R$ 1400,00</h4>
+                <div class="buttons">
+                <select>
+                    <option>Tamanho</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option> 
+                    <option>41</option> 
+                    <option>42</option>
+                    <option>43</option> 
+                </select>
+                <button>Adicionar ao Carrinho</button>
+                </div>
+                <h3>Detalhes do Produto</h3>
+                <div class="product-details">
+                <p>
+                    Eleve seu desempenho com a chegada da nova versão da linha consagrada e que esbanja sucesso entre os corredores, o Tênis Mizuno Wave Prophecy 11, ideal para quem sempre está em movimento, pensando na qualidade e estabilidade. O homem que busca amortecimento responsivo para uma corrida performance, essa é a escolha. Confeccionado em material resistente e durável, esse tênis de corrida tem cabedal em Mesh de minofilamento resistente, garantindo respirabilidade, reforço no calcanhar e placa Wave para estabilidade durante cada passada e dissipação do impacto. Entressola com amortecimento U4icX, eva leve com alta absorção de impactos. O solado possui a borracha Smooth ride e X10, para máxima durabilidade e maior tração durante o contato solado e solo. Vista seu short de corrida e regata esportiva para mood esportivo completo. Não deixe de aproveitar para adquirir o melhor tênis performance masculino para a sua corrida diária, aposte na Mizuno!
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="background">
+            <div class="page-inner-content footer-content">
+                <div class="logo-footer">
+                    <img src="img/Gaming Logo.png" width="290px">
+                </div>
+                <div class="links-footer">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>Política de Privacidade</li>
+                        <li>Termos de Uso</li>
+                        <li>Sobre Step-UP</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="page-inner-content"/>
+
+             <div class="page-inner-content copyright">
+                 <p>Copyright 2024 - João Paulo Marques Rodrigues - Todos os Direitos Reservados</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".nav-bar")
+        const menuButton = document.querySelector(".menu-button")
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('show-menu')
+        });
+    </script>
+
+    <script>
+        const abrirModal = document.querySelector('#abrir-modal')
+        const minhaModal = document.querySelector('#minha-modal')
+
+        minhaModal.addEventListener('click', () => {
+            minhaModal.showModal();
+        })
+    </script>
+</body>
+</html>
